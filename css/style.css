@@ -1,0 +1,259 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+/********************************header********************************************************/
+header nav{
+    border-bottom: 1px solid rgb(219, 215, 215);
+    background-color: white;
+    margin:0px 0px 100px 0px;
+}
+header .navbar-brand{
+    margin:0px 10px;
+    padding:0px 50px;
+    font-weight: bold;
+    color:#e64d61;
+    font-size: 30px;
+    font-family: fantasy;
+    
+}
+
+.navbar-nav .nav-item .nav-link{
+    color:#47bba2;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+}
+.d-flex{
+    font-weight: bold;
+    cursor: pointer;
+}
+/********************************************section****************************************/
+#about{
+    display: flex;
+    margin:50px auto;
+    padding:20px 50px 0px 50px;
+    justify-content: center;
+    align-items: center;
+}
+#about .page{
+    padding:50px 60px;
+    color:gray;
+}
+#about .page h1{
+    font-size: 40px;
+    
+    font-weight: bold;
+    position:relative;
+}
+#about .page .info-toggle{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+    min-width: 400px;
+}
+#about .page .item-toggle{
+    color:#e64d61;
+    line-height: inherit;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    animation: BottomTotop 6s linear infinite 0s;
+}
+#about .page .item-toggle:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+#about .page .item-toggle:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+@keyframes BottomTotop {
+    0% {
+        opacity: 0;
+      }
+    20% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    80% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+#about .page .p2{
+    font-size: 20px;
+    letter-spacing: 0.5;
+}
+#about .page .btn1, .btn2{
+    width:200px;
+    height:50px;
+    padding:5px;
+    font-size: 18px;
+    border:0px;
+    border-radius: 10px;
+    font-weight: bold;
+    color:black
+}
+#about .page .btn1{
+    background-color: #b9d4db;
+}
+#about img{
+    margin:0px 50px;
+}
+/**********************************************Project***********************************************************/
+#project{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:200px 90px;
+}
+#project h2{
+    font-size: 50px;
+    padding:10px 50px;
+}
+#project .carousel-inner{
+    margin:20px auto;
+    border: 1px solid;
+    align-items: center;
+    width:60%;
+    height: 100%;
+    box-shadow: 20px 20px 20px 10px gray;
+}
+#project .carousel-caption{
+    color:black;
+    font-size: 25px;
+}
+/****************************************resume****************************************************/
+
+#resume .row{
+    margin:100px 100px;
+}
+#resume .expr{
+    position: relative;
+    margin:40px 0px;
+}
+#resume .expr .year{
+    background-color: #b9d4db;
+    border-radius:100%;
+    font-size: 15px;
+    font-weight: bold;
+    width:75px;
+    height: 75px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+}
+#resume .expr .info{
+    margin-left: 100px;
+}
+.col h2{
+    font-weight: bold;
+}
+/**********************************************contact********************************************************/
+#contact{
+    margin:100px 60px;
+}
+#contact .row{
+    text-align: center;
+}
+#contact .row .cont{
+    background-color: #b9d4db;
+    width:67%;
+    padding:20px;
+    margin:0px 100px;
+}
+#contact .contact{
+    color:black;
+    text-align: left;
+}
+#contact ul{
+    list-style-type: none;
+}
+#contact ul li{
+    padding:5px 0px
+}
+#contact .row .col h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+.col-6 input{
+     width:290px;
+     height: 40px;
+     margin:20px 0;
+}
+.col-12 button{
+    width:150px;
+    height: 50px;
+    border:0px;
+    background-color: #47bba2;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin:10px 0px;
+}
+/*****************************************Footer**********************************************************/
+footer {
+    margin: 50px auto;
+    text-align: center;
+    padding:20px ;
+}
+footer ul{
+    list-style-type: none;
+    
+}
+footer ul li{
+    padding:5px 0px;
+    display:inline;
+}
+/*******************************************Dark Mode******************************************************/
+.replaced{
+   content: url(../icons/sun\ \(1\).svg);
+   width:30px;
+   height: 30px;
+}
+.texted{
+    color: white;
+}
+.replacePerson{
+    content: url(../icons/user\ \(1\).svg);
+    width:50px;
+    height: 50px;
+}
+.bodyDark{
+    background-color: black;
+    color:white
+}
+.navDark{
+    background-color: black;
+}
+.leftarrowdark{
+    content:url(../icons/angle-left-b\ \(1\).svg);
+}
+.rightarrow{
+    content: url(../icons/angle-right-b\ \(1\).svg);
+}
+.darkgithub{
+    content: url(../icons/github.svg);
+}
+.darklinked{
+    content: url(../icons/linkedin.svg);
+}
